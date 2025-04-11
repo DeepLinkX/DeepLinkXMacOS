@@ -8,6 +8,12 @@ import 'package:url_launcher/url_launcher.dart' as url_launcher;
 /// for launching URLs and applications. It currently throws an error for
 /// methods that are not implemented on the MacOS platform.
 class LauncherUtilMacOS extends LauncherUtilPlatform {
+
+  /// Registers this class as the default instance of [LauncherUtilMacOS].
+  static void registerWith() {
+    LauncherUtilPlatform.instance = LauncherUtilMacOS();
+  }
+
   @override
   Future<bool> launchUrl(final Uri uri) async =>
       url_launcher.launchUrl(uri, mode: url_launcher.LaunchMode.externalApplication);
