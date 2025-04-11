@@ -1,6 +1,6 @@
 name: deeplink_x_macos
 description: "MacOS implementation of the deeplink_x plugin."
-version: 0.0.2
+version: 0.0.3
 
 repository: https://github.com/DeeplinkX/DeeplinkXMacOS
 
@@ -25,4 +25,4 @@ flutter:
     implements: deeplink_x
     platforms:
       macos:
-        dartPluginClass: DeeplinkXMacOS
+        dartPluginClass: LauncherUtilMacOS
