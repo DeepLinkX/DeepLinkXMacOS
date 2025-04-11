@@ -1,6 +1,6 @@
 name: deeplink_x_macos
 description: "MacOS implementation of the deeplink_x plugin."
-version: 0.0.1
+version: 0.0.2
 
 repository: https://github.com/DeeplinkX/DeeplinkXMacOS
 
