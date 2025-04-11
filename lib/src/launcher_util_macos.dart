@@ -1,12 +1,12 @@
 import 'package:deeplink_x_platform_interface/deeplink_x_platform_interface.dart';
 import 'package:url_launcher/url_launcher.dart' as url_launcher;
 
-/// A utility class for launching applications and handling intents on Windows.
+/// A utility class for launching applications and handling intents on MacOS.
 ///
 /// This class extends [LauncherUtilPlatform] and provides methods to check
 /// if an Android app is installed, launch Android apps, and handle intents
 /// for launching URLs and applications. It currently throws an error for
-/// methods that are not implemented on the Windows platform.
+/// methods that are not implemented on the MacOS platform.
 class LauncherUtilMacOS extends LauncherUtilPlatform {
   @override
   Future<bool> launchUrl(final Uri uri) async =>
